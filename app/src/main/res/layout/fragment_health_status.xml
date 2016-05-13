@@ -1,0 +1,327 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.HealthStatus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contentcolor"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#000FFF"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:text="Hello" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:text="Ghada"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/network"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="Connecting..."
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_marginLeft="-260dp"
+                android:layout_marginTop="35dp"
+                android:text="20-4-2016"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="35dp"
+                android:text="12:40:6"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heartpic"
+                android:src="@drawable/ic_heart_pulse"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heart"
+                android:text="HeartRate"
+                android:textColor="#000FFF"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temppic"
+                android:src="@drawable/thermometer"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:text="Temperature"
+                android:textColor="#000FFF"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="50dp"
+                android:text="72 BPM"
+                android:id="@+id/heartvalue"
+                android:textColor="#000FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="120dp"
+                android:text="37 "
+                android:id="@+id/tempvalue"
+                android:textColor="#000FFF"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/tempc"
+                android:src="@drawable/temperature_celsius"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f00"
+                android:text="Up Normal HeartRate"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/heart_notif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a4c639"
+                android:text="Normal"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/temp_notif"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/caloriespic"
+                android:src="@drawable/fire"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calories"
+                android:text="Calories Burned"
+                android:textColor="#000FFF"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distancpic"
+                android:src="@drawable/walk"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distance"
+                android:text=" Distance"
+                android:textColor="#000FFF"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="50dp"
+                android:text="100 Cals"
+                android:id="@+id/caloriesvalue"
+                android:textColor="#000FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="120dp"
+                android:text="90 M"
+                android:id="@+id/distancevalue"
+                android:textColor="#000FFF"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f00"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:id="@+id/calories_notif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a4c639"
+                android:text=""
+                android:layout_marginLeft="120dp"
+                android:id="@+id/distance_notif"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#000FFF"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Healthy body you should Satisfy values:- "
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000FFF"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200 min"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85 bpm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 km"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300 cals"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000FFF"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000FFF">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
